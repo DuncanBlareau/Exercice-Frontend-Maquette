@@ -1,0 +1,131 @@
+.carousels {
+    padding-top: 117px;
+    padding-bottom: 108px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+  }
+  .star1 {
+    overflow: hidden;
+    width: 150px;
+    position: absolute;
+    top: -70px;
+    right: -80px;
+  }
+  .star2 {
+    overflow: hidden;
+    width: 150px;
+    position: absolute;
+    bottom: -70px;
+    right: -80px;
+  }
+.prix {
+  overflow: hidden;
+    height: 190px;
+    position: absolute;
+    left: -100px;
+    top: -10px;
+    z-index: 2;
+}
+  .carousel-left, .carousel-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+
+  .carousel-left-container, .carousel-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .carousel-container {
+    width: 536px;
+    height: 536px;
+    background-color: #F5F5F5;
+  }
+
+  .carousel-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #50B6B2;
+  }
+
+.button-prev,
+.button-next,
+.button-prev-2,
+.button-next-2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+}
+
+.button-prev, .button-prev-2 {
+    left: -20px;
+  }
+
+.button-next, .button-next-2 {
+    right: -20px  
+}
+
+.carousel-title {
+    margin-top: 32px;
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+  font-style: bold;
+  font-size: 32px;
+}
+
+@media (max-width: 800px) {
+  .carousels {
+    flex-direction: column;
+    padding-top: 48px;
+  }
+
+  .star1 {
+    width: 120px;
+    position: absolute;
+    top: -50px;
+    right: -30px;
+  }
+
+  .star2 {
+    width: 120px;
+    position: absolute;
+    bottom: -50px;
+    right: -30px;
+  }
+
+  .prix {
+    height: 113px;
+    left: -10px;
+    top: -10px;
+    z-index: 2;
+  }
+  .carousel-right-container {
+    padding-top: 24px;
+  }
+  .carousel-container {
+    width: 320px;
+    height: 320px;
+    background-color: #F5F5F5;
+  }
+
+  .carousel-title {
+    margin-top: 16px;
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+  font-style: bold;
+  font-size: 18px;
+}
+}
