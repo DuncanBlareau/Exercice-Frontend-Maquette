@@ -6,6 +6,7 @@ import Footer from './Footer';
 
 function App() {
   const [showVideo, setShowVideo] = useState(false);
+  // eslint-disable-next-line
   const [showMessage, setShowMessage] = useState(false);
 
   const handleImageClick = () => {
